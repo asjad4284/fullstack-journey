@@ -1,44 +1,35 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="hero">
-            <h1 class="heading h1">Visit Torshov</h1>
-            <h2 class="heading h2">Enjoy culture and sports in this vibrant district close to the center of Oslo.</h2>
-        </div>
-        
-        <div class="activities">
-            <h3 class="h3">Top three activities to do at Torshov</h3>
-            <div class="img">
-                <div class="section">
-                    <img src="images/park.jpg">
-                    <h4 class="sh">Attend a show or a concert</h4>
-                    <p class="sp">The Torshov Theatre is a great place to spend your night out.</p>
-                </div>
-                <div class="section ">
-                    <img src="images/theatre.jpg">
-                    <h4 class="sh">Go for a piknic in the local park</h4>
-                    <p class="sp">The Torshov Park is perfect for piknic, getting some tan, or just chilling out.</p>
-                </div>
-                <div class="section">
-                    <img src="images/sports.jpg">
-                    <h4 class="sh">Play sports at the Lilleborg field</h4>
-                    <p class="sp">Play volleyball, football, basket ball or lift some weights.</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="guide-section">
-            <div class="content">
-                <h3 id="guide-heading">Your guide</h3>
-                <p id="guide-para">"I have lived at Torshov for over 30 years, so I can show you all of its best parts and hidden secrets."</p>
-                <h4 id="guide-h4">Per Harald Borgen</h4>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col">
+            <h3>HOME</h3>
+            <div class="score-screen">
+                <p id="score-home">0</p>
             </div>
-            <div class="guide">
-                <img id="guide-img" src="images/per.jpg">
+            <div>
+                <button onclick="incrementOne_home()">+1</button>
+                <button onclick="incrementTwo_home()">+2</button>
+                <button onclick="incrementThree_home()">+3</button>
             </div>
         </div>
-    </body>
+        <div class="col">
+            <h3>GUEST</h3>
+            <div class="score-screen">
+                <p id="score-guest">0</p>
+            </div>
+            <div>
+                <button onclick="incrementOne_guest()">+1</button>
+                <button onclick="incrementTwo_guest()">+2</button>
+                <button onclick="incrementThree_guest()">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>

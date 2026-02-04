@@ -1,108 +1,53 @@
+@font-face {
+  font-family: 'MyCustomFont'; /* Choose a name for your font */
+  src: url('CursedTimerUlil-Aznm.ttf') format('truetype'); /* Link to the font file in your directory */
+  font-weight: normal; /* Optional: define weight */
+  font-style: normal; /* Optional: define style */
+  font-display: swap; /* Optional: define how the font loads and displays */
+}
 
 body {
     margin: 0;
-    text-align: center;
+    background-color: #1b244a;
 }
 
-img {
-    width: 150px;
-    border-radius: 50%;
-}
-.hero{
-    background-image: url("images/torshov.jpg");
-    background-size: cover;
-    height: 550px;
+.container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 }
-.heading{
+h3{
     color: white;
-    font-weight: bold;
-    /* margin-bottom: 0px; */
+    font-size: 30px;
 }
-.h1{
-    background-color: #1D3557;
-    padding: 10px;
-    border-radius: 10px;
-}
-.h2{
-    margin-top: 0px;
-    border-radius: 10px;
-    background-color: #457B9D;
-    padding: 10px;
-    width: 500px;
-}
-.activities{
-    background-color: #F1FAEE;
-    /* height: 400px; */
-}
-.h3{
-    margin: 0px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: #1D3557;
-    font-size: 40px;
-    font-weight: bold;
-}
-.img{
+.score-screen{
+    width: 155px;
+    height: 120px;
+    background-color: black;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
 }
-.sh{
-    color: #1D3557;
-    font-size: 25px;
-    width: 195px;
-    margin-bottom: 0px;
+button{
+   padding: 10px; 
+   margin-top: 20px;
+   margin-right: 10px;
+   background-color: #1b244a;
+   color: #9AABD8;
+   border: 1px solid #9AABD8;
+   font-family: 'MyCustomFont'; 
+   border-radius: 5px;
+   cursor: pointer;
 }
-.sp{
-    width: 270px;
-    font-size: 17px;
-    color: #1D3557;
-    padding-bottom: 20px;
-}
-.section{
+.col{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-.guide-section{
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    margin-bottom: 20px;
-    border-bottom: 10px solid #1D3557;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
-    width: 600px;
-    background-color: #A8DADC;
-    border-radius: 10px;
-}
-
-#guide-img{
-    border-radius: 20px;
-    width: 200px;
-    margin-left: 20px;
-
-}
-.content{
-    color: #1D3557;
-}
-#guide-heading{
-    font-weight: bold;
-    font-size: 30px;
-}
-#guide-para{
-    font-style: italic;
-    font-size: 25px;
-
-}
-#guide-h4{
-    font-size: 30px;
-    font-weight: bold;
+p{
+    color: #F94F6D;
+    font-size: 60px;
+    margin: 0px;
+    font-family: 'MyCustomFont'; 
+    
 }
