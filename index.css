@@ -7,7 +7,6 @@ body {
 .main{
     width: 600px;
     height: 600px;
-    /* border: 2px solid white; */
     margin-right: auto;
     margin-left: auto;
     text-align:start;
@@ -45,7 +44,6 @@ hr{
 .pass1{
     width: 270px;
     height: 50px;
-    /* border: 2px solid white; */
     border-radius: 5px;
     background-color: #273549;
     display: flex;
@@ -56,7 +54,6 @@ hr{
 .pass2{
     width: 270px;
     height: 50px;
-    /* border: 2px solid white; */
     border-radius: 5px;
     background-color: #273549;
     display: flex;
@@ -70,6 +67,6 @@ hr{
     margin-top: 50px;
 }
 .pass{
-    color: #10B981;
+    color: #55F991;
     margin: 0px;
 }
