@@ -1,72 +1,36 @@
 body {
     margin: 0;
-    background-color: #1F2937;
-    text-align: center;
-    color: white;
-}
-.main{
-    width: 600px;
-    height: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align:start;
-}
-.heading{
-    margin-top: 100px;
-    font-size: 50px;
-    margin-bottom: 0px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
 }
 
-span{
-    color: #10b77f;
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #5f9341;
+    margin-bottom: 4px;
 }
-p{
-    margin-top: 10px;
-    color: #D5D4D8;
-    font-size: 20px;
-    text-shadow: 0px 0px 5px black;
-}
-button{
+
+button {
+    background: #5f9341;
     color: white;
-    background-color: #10B981;
     padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 40px;
-    text-shadow: 0px 0px 2px black;
-    font-size: 17px;
     border: none;
+    font-weight: bold;
 }
-hr{
-    margin-top: 50px;
-    border-color: #2F3E53;
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
 }
-.pass1{
-    width: 270px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #273549;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+li {
+    margin-top: 5px;
 }
-.pass2{
-    width: 270px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #273549;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.ans{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-.pass{
-    color: #55F991;
-    margin: 0px;
+
+a {
+    color: #5f9341;
 }
