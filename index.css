@@ -34,3 +34,8 @@ li {
 a {
     color: #5f9341;
 }
+#delete-btn{
+    background-color: white;
+    color: #5f9341;
+    border: 1px solid #5f9341;
+}
