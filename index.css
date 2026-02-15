@@ -1,117 +1,84 @@
-body{
-    font-size: 16px;
-    color: #2b283a;
-    font-family: 'Roboto', sans-serif;
+body {
     margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #282828;
 }
 
-/* typography */
-
-h1, h3{
-    margin: 0;
-}
-
-h1{
-    color: whitesmoke;
-    font-size: 36px;
-}
-
-h2{
-    margin-top: 0;
-}
-
-h3{
-    color: #d0aaff;
-    font-size: 20px;
-}
-
-p{
-    line-height: 23px;
-}
-
-/* links */
-
-a{
-    color: #ef5839;
-    text-decoration: underline dotted; 
-}
-
-a:hover, a:active{
-    color: #d4b44c;
-}
-
-/* 
-Challenge:
-1. Refactor the CSS for these button-style
-   links using two classes on each link
-   element.
-⚠️ Think what to call the new class you
-   will need to create.
-*/
-
-.btn{
-    padding: 10px 19px;
-    border-radius: 4.6px;
-    font-weight: 500;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-dark{
-    background: #5f29a3;
-    color: whitesmoke
-}
-
-.btn-mid{
-    background: #F0E0FF; 
-    color: #5f29a3; 
-}
-
-.btn-light{
-    background: whitesmoke;
-    color: #5f29a3; 
-}
-
-.btn:hover, 
-.btn:active{
-    background-color: #f3e885;
-    color: #2b238a;
-}
-
-/* layout */
-
-header, section, footer{
-    padding: 45px 0;
-}
-
-header, .section-two{
-    background-color: #5f29a3;
-}
-
-.section-two{
+header {
+    background-color: #282828;
     color: whitesmoke;
 }
 
-.container{
-    width: 620px;
-    margin: 0 auto;
+.logo {
+    font-size: 18px;
+    font-weight: 700;
 }
 
-.main-image{
-    width:100%;
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+    gap: 10px
 }
 
-.section-two-image-container{
+li {
+    cursor: pointer;
+}
+
+.icon {
+    width: 25px;
+}
+
+.align-right {
+    margin-left: auto;
+} 
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 30px 25px;
+}
+
+.item {
+    position: relative;
+}
+
+.item-img {
+    display: block;
+    width: 100%;
+}
+
+.caption {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    margin: 0 25px;
 }
 
-.feature-image{
-    width: 300px;
-    border-radius: 4.6px;
+.img-banner { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px;
+} 
+
+button {
+/*
+Challenge:
+1. Centrally align the button on the 
+   vertical axis so it looks like the 
+   screenshot on the slide.
+*/
+    border: none;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px 15px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
-footer{
-    text-align: center;
-    color: #5f29a3;
-}
