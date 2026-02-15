@@ -75,6 +75,9 @@ Challenge:
    screenshot on the slide.
 */
     border: none;
+    margin: auto;
+    /* We can also use align self property rather than margin:auto to avoid the streching behavior!
+    align-self: center */
     background-color: #cd6858;
     color: whitesmoke;
     padding: 10px 15px;
