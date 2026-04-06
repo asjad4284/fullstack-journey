@@ -1,7 +1,5 @@
-function abc(){
-    console.log("Get this work done!!!")
+const check=(x,y)=>{
+    return x/y
 }
 
-
-const check=abc()
-console.log(check)
+console.log(check(10,5))
