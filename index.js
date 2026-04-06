@@ -1,5 +1,4 @@
-const check=(x,y)=>{
-    return x/y
-}
-
-console.log(check(10,5))
+let button=document.getElementsByName("true")
+let b=button[0]
+b.setAttribute("name","asjad")
+console.log(b)
