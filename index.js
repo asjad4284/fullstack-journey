@@ -1,8 +1,7 @@
-let num1=[1,2,3]
-let res1=num1.push(4)
-console.log(num1)
+function abc(){
+    console.log("Get this work done!!!")
+}
 
-let num2=[1,2,3]
-let res2=num2.concat(4)
-console.log(num2)
-console.log(res2)
+
+const check=abc()
+console.log(check)
