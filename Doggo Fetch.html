@@ -100,12 +100,11 @@
         choices.push(correctAnswer);
         while(choices.length<n){
             let choice=getRandomElement(array)
-            if(choices.includes(choice)){
+            if(!choices.includes(choice)){
                 choices.push(choice)
             }
         }
         return shuffleArray(choices);
-
     }
 
     
@@ -195,6 +194,9 @@
     // TODO 5
     // Asynchronously call the loadQuizData() function,     
     // Then call renderQuiz() with the returned imageUrl, correctAnswer, and choices 
+
+    const [imgUrl,correctAnswer,choice]=await loadQuizData()
+    renderQuiz(imgUrl,correctAnswer,breedChoices)
     
     
 
