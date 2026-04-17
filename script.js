@@ -1,9 +1,18 @@
-function display(data){
-    console.log("me second")
-}
+function printHello(){
+    console.log("Hello world")
 
-const result=fetch("https://tiktok.com")
+}
+function display(){
+    console.log("Me second")
+
+}
+function blockfor33ms(){
+
+}
+setTimeout(printHello,0)
+
+const result=fetch("ljflsdjldk")
 result.then(display)
 
-
+blockfor33ms()
 console.log("Me first")
