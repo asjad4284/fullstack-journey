@@ -1,14 +1,9 @@
-// function check(){
-//     let counter=0;
+function display(data){
+    console.log("me second")
+}
 
-//     function add(){
-//         counter++;
-//     }
-//     return add
-// }
-// const newfunc=check()
-// newfunc()
-// newfunc()
+const result=fetch("https://tiktok.com")
+result.then(display)
 
 
-console.log("7" * "3")
+console.log("Me first")
