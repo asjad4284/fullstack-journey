@@ -10,6 +10,8 @@ const functionstore={
     }
 }
 
+
+
 const user1=newUser("Corey",5)
 const user2=newUser("John",10)
 
