@@ -4,13 +4,12 @@ function newUser(name,score){
     user.score=score
     return user
 }
+
 const functionstore={
     increment:function(){
         this.score++
     }
 }
-
-
 
 const user1=newUser("Corey",5)
 const user2=newUser("John",10)
