@@ -1,15 +1,13 @@
 class User{
-    static describe(){console.log("Logged In!")}
+    #score;
     constructor(name,score){
         this.name=name
-        this.score=score
+        this.#score=score
     }
     increment(){
-        this.score++
+        this.#score++
     }
 }
 
 const user1=new User("Corey",5)
 user1.increment()
-console.log(user1.score)
-User.describe()
