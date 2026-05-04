@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import Pizza from "./pizza";
+import Pizza from "./Pizza";
 
 const App = () => {
   return (
