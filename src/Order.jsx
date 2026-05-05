@@ -1,7 +1,8 @@
+import { useState } from "react";
 import Pizza from "./Pizza";
 
 export default function Order(){
-    const pizzatype="pepperoni"
+    const [pizzatype,setpizzatype]=useState("pepperoni")
     const pizzasize="M"
     return (
         <div className="order">
@@ -10,9 +11,12 @@ export default function Order(){
                 <div>
                     <div>
                         <label htmlFor="pizza-type">Pizza Type</label>
-                        <select name="pizza-type" value={pizzatype}>
+                        <select 
+                        onChange={(e)=>setpizzatype(e.target.value)}
+                        name="pizza-type" 
+                        value={pizzatype}>
                             <option value="pepperoni">The Pepperoni Pizza</option>
-                            <option value="pepperoni">The Big Meat Pizza</option>
+                            <option value="big_meat">The Big Meat Pizza</option>
                         </select>
                     </div>
                     <div>
