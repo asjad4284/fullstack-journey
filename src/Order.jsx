@@ -3,7 +3,7 @@ import Pizza from "./Pizza";
 
 export default function Order(){
     const [pizzatype,setpizzatype]=useState("pepperoni")
-    const pizzasize="M"
+    const [pizzasize,setpizzasize]=useState("M")
     return (
         <div className="order">
             <h2>Create Order</h2>
@@ -29,7 +29,8 @@ export default function Order(){
                                     name="pizza-size"
                                     id='pizza-s'
                                     value='S'
-                                />
+                                    onChange={(e)=>setpizzasize(e.target.value)}
+                                    />
                             <label htmlFor="pizza-s">Small</label>
                             </span>
                             <span>
@@ -39,7 +40,8 @@ export default function Order(){
                                     name="pizza-size"
                                     id='pizza-m'
                                     value='M'
-                                />
+                                    onChange={(e)=>setpizzasize(e.target.value)}
+                                    />
                             <label htmlFor="pizza-m">Medium</label>
                             </span>
                             <span>
@@ -49,6 +51,7 @@ export default function Order(){
                                     name="pizza-size"
                                     id='pizza-l'
                                     value='L'
+                                    onChange={(e)=>setpizzasize(e.target.value)}
                                 />
                             <label htmlFor="pizza-l">Large</label>
                             </span>
