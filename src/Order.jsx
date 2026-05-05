@@ -1,9 +1,29 @@
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import Pizza from "./Pizza";
 
 export default function Order(){
     const [pizzatype,setpizzatype]=useState("pepperoni")
     const [pizzasize,setpizzasize]=useState("M")
+    const [loading,setloading]=useState(true)
+    const [pizzatypes,setpizzatypes]=useState([])
+
+    let price,selectedpizza;
+    if(!loading){
+        selectedpizza=pizzatypes.find((pizza)=>pizzatype===pizza.id);
+    }
+
+    useEffect(() => {
+        fetchPizzaTypes();
+    }, []);
+
+    
+    async function fetchpizzatypes() {
+        const pizzasRes = await fetch("/api/pizzas");
+        const pizzasJson = await pizzasRes.json();
+        setPizzaTypes(pizzasJson);
+        setLoading(false);
+    }
+
     return (
         <div className="order">
             <h2>Create Order</h2>
