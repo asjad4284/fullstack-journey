@@ -35,9 +35,9 @@ export default function Order(){
                         onChange={(e)=>setpizzatype(e.target.value)}
                         name="pizza-type" 
                         value={pizzatype}>
-                            {pizzatypes.map((pizza)=>
+                            {pizzatypes.map((pizza)=>(
                                 <option key={pizza.id} name={pizza.id}>{pizza.name}</option>
-                            )}
+                            ))}
                         </select>
                     </div>
                     <div>
@@ -81,13 +81,16 @@ export default function Order(){
                     <button type="submit">Add to Cart</button>
                 </div>
                 <div className="order-pizza">
-                    <Pizza
-                        name="Pepperoni"
-                        description="another pep pizza"
-                        image="/public/pizzas/pepperoni.webp"
-                    />
-                    <p>$13.37</p>
-
+                    {!loading && selectedpizza && (
+                        <>
+                            <Pizza
+                                name={selectedpizza.name}
+                                description={selectedpizza.description}
+                                image={selectedpizza.image}
+                            />
+                            <p>$13.37</p>
+                        </>
+                    )}
                 </div>
             </form>
 
