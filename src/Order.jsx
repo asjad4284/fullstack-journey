@@ -36,7 +36,7 @@ export default function Order(){
                         name="pizza-type" 
                         value={pizzatype}>
                             {pizzatypes.map((pizza)=>(
-                                <option key={pizza.id} name={pizza.id}>{pizza.name}</option>
+                                <option key={pizza.id} value={pizza.id}>{pizza.name}</option>
                             ))}
                         </select>
                     </div>
