@@ -10,6 +10,7 @@ export default function Order(){
     let price,selectedpizza;
     if(!loading){
         selectedpizza=pizzatypes.find((pizza)=>pizzatype===pizza.id);
+        price=selectedpizza.sizes[pizzasize]
     }
 
     useEffect(() => {
@@ -88,7 +89,7 @@ export default function Order(){
                                 description={selectedpizza.description}
                                 image={selectedpizza.image}
                             />
-                            <p>$13.37</p>
+                            <p>{price}</p>
                         </>
                     )}
                 </div>
