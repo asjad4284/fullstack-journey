@@ -23,4 +23,4 @@ const PizzaOfTheDay=()=>{
     )
 }
 
-export default usePizzaOfTheDay
+export default PizzaOfTheDay
