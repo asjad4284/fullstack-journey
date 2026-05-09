@@ -1,11 +1,13 @@
 import { useEffect,useState } from "react";
 import Pizza from "./Pizza";
+import Cart from "./Cart"
 
 export default function Order(){
     const [pizzatype,setpizzatype]=useState("pepperoni")
     const [pizzasize,setpizzasize]=useState("M")
     const [loading,setloading]=useState(true)
     const [pizzatypes,setpizzatypes]=useState([])
+    const [cart,setCart]=useState([])
 
     let price,selectedpizza;
     if(!loading){
@@ -28,7 +30,10 @@ export default function Order(){
     return (
         <div className="order">
             <h2>Create Order</h2>
-            <form>
+            <form onSubmit={(e)=>{
+                e.preventDefault()
+                setCart(...cart,{pizza:selectedpizza,size:pizzasize,price})
+            }}>
                 <div>
                     <div>
                         <label htmlFor="pizza-type">Pizza Type</label>
@@ -94,7 +99,9 @@ export default function Order(){
                     )}
                 </div>
             </form>
-
+            {
+                loading? <h2>Loading...</h2>:<Cart cart={cart}/>
+            }
         </div>
     )
 }
