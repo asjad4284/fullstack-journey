@@ -3,7 +3,7 @@ import {usePizzaOfTheDay} from "./usePizzaOfTheDay"
 const PizzaOfTheDay=()=>{
     const pizzaOfTheDay=usePizzaOfTheDay();
     if(!pizzaOfTheDay){
-        return <div>Loading</div>
+        return <div>Loading...</div>
     }
 
     return (

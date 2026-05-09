@@ -89,7 +89,7 @@ export default function Order(){
                                 description={selectedpizza.description}
                                 image={selectedpizza.image}
                             />
-                            <p>{price}</p>
+                            <p>${price}</p>
                         </>
                     )}
                 </div>
