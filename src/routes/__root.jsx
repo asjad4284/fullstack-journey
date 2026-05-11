@@ -5,7 +5,7 @@ import PizzaOfTheDay from "../PizzaOfTheDay";
 import Header from "../Header";
 import { CartContext } from "../contexts";
 
-export const Root=createRootRoute({
+export const Route=createRootRoute({
     component:()=>{
         const cartHook=useState([]);
         return (
