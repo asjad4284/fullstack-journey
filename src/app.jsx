@@ -1,9 +1,9 @@
 import { StrictMode, useState } from "react";
-import ReactDOM from "react-dom/client";
-import Order from "./Order";
-import PizzaOfTheDay from "./PizzaOfTheDay";
-import Header from "./header";
 import { CartContext } from "./contexts";
+import Order from "./Order";
+import Header from "./header";
+import PizzaOfTheDay from "./PizzaOfTheDay";
+import ReactDOM from "react-dom/client";
 
 const App = () => {
   const cartHook=useState([])

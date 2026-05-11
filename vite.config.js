@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 
 export default defineConfig({
   // Setting the proxy for api server
@@ -16,5 +17,5 @@ export default defineConfig({
       },
     },
   },
-  plugins: [react()],
+  plugins: [TanStackRouterVite(),react()],
 });
