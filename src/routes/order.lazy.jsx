@@ -1,7 +1,7 @@
 import { useEffect,useState,useContext } from "react";
-import Pizza from "./Pizza";
-import Cart from "./Cart"
-import { CartContext } from "./contexts";
+import Pizza from "../Pizza";
+import Cart from "../Cart"
+import { CartContext } from "../contexts";
 
 export default function Order(){
     const [pizzatype,setpizzatype]=useState("pepperoni")
