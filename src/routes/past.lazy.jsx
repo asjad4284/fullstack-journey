@@ -62,6 +62,42 @@ function PastOrdersRoute(){
           Next
         </button>
       </div>
+      {
+        focusedOrder ? (
+          <Modal>
+            <h2>Order #{focusedOrder}</h2>
+            {!isLoading?(
+              <table>
+                <thead>
+                  <tr>
+                    <td>Image</td>
+                    <td>Name</td>
+                    <td>Size</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    <td>Total</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  {pastOrderData.orderItems.map((pizza)=>(
+                    <tr key={`${pizza.pizzaTypeId}_${pizza.size}`}>
+                      <td>
+                        <img src={pizza.image} alt="" />
+                      </td>
+                      <td>{pizza.name}</td>
+                      <td>{pizza.size}</td>
+                      <td>{pizza.quantity}</td>
+                      <td>{pizza.price}</td>
+                      <td>{pizza.total}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>             
+            ):<p>Loading...</p>}
+            <button onClick={()=>setFocusedOrder()}>Close</button>
+          </Modal>
+        ) : null
+      }
     </div>
   )
 }
