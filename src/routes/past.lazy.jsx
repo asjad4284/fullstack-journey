@@ -21,7 +21,7 @@ function PastOrdersRoute(){
 
   const {isLoading:isLoadingPastOrder,data:pastOrderData}=useQuery({
     queryKey:["past-order",focusedOrder],
-    queryFn:()=>getPastOrders(focusedOrder),
+    queryFn:()=>getPastOrder(focusedOrder),
     staleTime:86400000,
     enabled: !!focusedOrder
   })
@@ -47,7 +47,12 @@ function PastOrdersRoute(){
         <tbody>
           {data.map((order)=>(
             <tr key={order.order_id}>
-              <td>{order.order_id}</td>
+              <td>
+                <button onClick={()=>setFocusedOrder(order.order_id)}>
+                  {order.order_id}
+                </button>
+                
+              </td>
               <td>{order.date}</td>
               <td>{order.time}</td>
             </tr>
@@ -66,7 +71,7 @@ function PastOrdersRoute(){
         focusedOrder ? (
           <Modal>
             <h2>Order #{focusedOrder}</h2>
-            {!isLoading?(
+            {!isLoadingPastOrder?(
               <table>
                 <thead>
                   <tr>
