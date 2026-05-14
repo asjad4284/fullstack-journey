@@ -4,13 +4,25 @@ import { createLazyFileRoute } from '@tanstack/react-router'
 import getPastOrders from '../api/getPastOrders'
 import getPastOrder from '../api/getPastOrder'
 import Modal from '../Modal'
+import ErrorBoundary from '../ErrorBoundary'
 
 
 export const Route = createLazyFileRoute('/past')({
-  component: PastOrdersRoute,
+  component: ErrorBoundaryWrappedPastOrderRoute,
 })
 
+function ErrorBoundaryWrappedPastOrderRoute(props){
+  return (
+    <ErrorBoundary>
+      <PastOrdersRoute {...props}/>
+    </ErrorBoundary>
+  )
+}
+
 function PastOrdersRoute(){
+  throw new error("omg lol wtf")
+  
+  
   const [page,setPage]=useState(1)
   const [focusedOrder,setFocusedOrder]=useState()
   const {isLoading,data}=useQuery({
