@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-charcoal font-sans;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-cream-dark rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-green-sage rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-green-deep;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-cream-light border border-border rounded-2xl shadow-sm transition-all duration-200;
+  }
+  
+  .card-hover {
+    @apply hover:scale-[1.02] hover:shadow-md;
+  }
+  
+  .btn-primary {
+    @apply bg-green-deep text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-green-dark focus:ring-2 focus:ring-green-sage focus:outline-none;
+  }
+  
+  .btn-secondary {
+    @apply border border-green-deep text-green-deep px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-green-deep hover:text-white;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-border rounded-lg bg-cream-light focus:ring-2 focus:ring-green-sage focus:border-transparent outline-none transition-all duration-200;
+  }
+}
+
 /* Add to existing index.css */
 
 /* Animated gradient background */

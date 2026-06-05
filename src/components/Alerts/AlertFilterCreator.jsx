@@ -43,10 +43,6 @@ const AlertFilterCreator = ({ onAddAlert }) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
             onSubmit={handleSubmit(onSubmit)}
             className="mt-4 space-y-4 overflow-hidden"
