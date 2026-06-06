@@ -1,1 +1,2 @@
-console.log("Hellllo Worlddddddddddd")
+let a=5;
+console.log(a)
