@@ -1,7 +1,7 @@
-let a=5;
-function abc(){
-    a=10
-    b=5
-}
-console.log(a)
-console.log(b)
+var teacher="Corey";
+
+(function(teacher){
+    console.log(teacher)
+})("John")
+
+console.log(teacher)
