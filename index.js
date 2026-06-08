@@ -3,8 +3,9 @@ var check=function abc(){
     function xyz(){
         console.log(a)
     }
+    return "This will work";
 
-}
+};
 
-check.xyz()
+check.xyz();
 
