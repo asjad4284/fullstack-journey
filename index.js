@@ -1,2 +1,6 @@
-console.log(a)
-let a=4;
+
+check()
+
+function check(){
+    console.log("This willl work")
+}
