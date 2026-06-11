@@ -5,3 +5,5 @@ function counter(n){
 }
 
 console.log(counter(10))
+console.log(counter(11))
+console.log(counter(12))
