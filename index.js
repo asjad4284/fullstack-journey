@@ -2,11 +2,16 @@ function ask(question){
     console.log(this.teacher,question)
 }
 
-function otherFunction(){
-    var context={
-        teacher:"John",
-    };
-    ask.call(context,"Why is this happening?")
-}
+var workshop1={
+    teacher:"Corey",
+    ask:ask,
+};
 
-otherFunction()
+
+var workshop2={
+    teacher:"John",
+    ask:ask,
+};
+
+workshop1.ask("How can we solve this problem!")
+workshop2.ask("How can we solve this problem!")
