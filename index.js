@@ -1,3 +1,3 @@
-var a=3
-var a=20
-console.log(a)
+let a=3;
+let a=20;
+console.log(a);
