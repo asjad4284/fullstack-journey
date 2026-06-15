@@ -1,4 +1,11 @@
-// let a=3;
-console.log(a);
+function Workshop(teacher){
+    this.teacher=teacher
+}
 
-let a=20;
+Workshop.prototype.ask=function(question){
+    console.log(this.teacher,question)
+}
+
+let deepJs=new Workshop("Corey")
+
+deepJs.ask("Can u teach me fundamentals of FastApi?")
