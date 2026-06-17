@@ -1,3 +1,3 @@
-a=5;
-console.log(a)
-var a;
+b=5;
+console.log(b)
+var b;
