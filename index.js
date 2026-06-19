@@ -2,6 +2,10 @@ function printHello(){
     console.log("Hello")
 }
 
-setTimeout(printHello,1000);
+function check(){
+    // console.log("Me second")
+}
 
-console.log("Me First!")
+setTimeout(printHello,0);
+check()
+console.log("Me first!")
