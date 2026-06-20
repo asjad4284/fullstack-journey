@@ -11,5 +11,7 @@ function createFunction(array){
 const returnNextElement=createFunction([4,5,6])
 const element1=returnNextElement()
 const element2=returnNextElement()
+const element3=returnNextElement()
 console.log(element1)
 console.log(element2)
+console.log(element3)
