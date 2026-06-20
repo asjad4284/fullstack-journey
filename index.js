@@ -1,11 +1,10 @@
-function printHello(){
-    console.log("Hello")
+function createFunction(){
+    function add2(num){
+        return num+2;
+    }
+    return add2
 }
 
-function check(){
-    // console.log("Me second")
-}
-
-setTimeout(printHello,0);
-check()
-console.log("Me first!")
+const newFunction=createFunction()
+const result=newFunction(3)
+console.log(result)
