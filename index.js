@@ -1,17 +1,17 @@
-function createFunction(array){
+function createFlow(array){
     let i=0;
-    function inner(){
-        let element=array[i]
-        i++;
-        return element
+    const inner={next:
+        function(){
+            const element=array[i];
+            i++;
+            return element
+        }
     }
-    return inner
+    return inner;
 }
 
-const returnNextElement=createFunction([4,5,6])
-const element1=returnNextElement()
-const element2=returnNextElement()
-const element3=returnNextElement()
+const retrunNextElement=createFlow([4,5,6])
+const element1=retrunNextElement.next()
+const element2=retrunNextElement.next()
 console.log(element1)
 console.log(element2)
-console.log(element3)
