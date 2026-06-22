@@ -1,11 +1,15 @@
-function* createFlow(){
-    const res=yield fetch("https;//twitter.com/will/1")
-    console.log(res)
-}
-function printHello(value){
-    returnNextElement.next(value)
+function printHello(){
+    return "Me Third"
 }
 
-const returnNextElement=createFlow()
-const futureData=returnNextElement.next()
-futureData.then(printHello)
+
+async function createFlow() {
+    console.log("Async is about to start!!!")
+    const data=await printHello()
+    console.log(data)
+    console.log("Async has ended!!!")
+}
+
+console.log("Me first")
+createFlow()
+console.log("Me Second")
