@@ -1,17 +1,11 @@
-function createFlow(array){
-    let i=0;
-    const inner={next:
-        function(){
-            const element=array[i];
-            i++;
-            return element
-        }
-    }
-    return inner;
+function *createFlow(){
+    yield 4;
+    yield 5;
+    yield 6;
 }
 
-const retrunNextElement=createFlow([4,5,6])
-const element1=retrunNextElement.next()
-const element2=retrunNextElement.next()
+const returnNextElement=createFlow();
+const element1=returnNextElement.next()
+const element2=returnNextElement.next()
 console.log(element1)
 console.log(element2)
