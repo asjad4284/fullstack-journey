@@ -10,6 +10,6 @@ async function createFlow() {
     console.log("Async has ended!!!")
 }
 
-console.log("Me first")
+console.log("Me first!!")
 createFlow()
-console.log("Me Second")
+console.log("Me Second!")
