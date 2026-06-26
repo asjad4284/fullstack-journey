@@ -1,7 +1,9 @@
 async function check() {
     console.log("Me second")
-    const result=await "Me fourth"
-    console.log("Me third")
+    const result=await "Me fifth"
+    console.log("Me fourth")
     console.log(result)
 }
-console.log()
+console.log("Me first")
+check()
+console.log("Me third")
