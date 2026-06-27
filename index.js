@@ -1,8 +1,13 @@
+function callfunc(){
+    console.log("Inside call func")
+}
+
 async function check() {
     console.log("Me second")
     const result=await "Me fifth"
     console.log("Me fourth")
     console.log(result)
+
 }
 console.log("Me first")
 check()
